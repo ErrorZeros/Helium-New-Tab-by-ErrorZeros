@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background: 
+    radial-gradient(1px 1px at 20px 30px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 70px 150px, #ffffff, transparent),
+    radial-gradient(1px 1px at 120px 80px, #ffffff, transparent),
+    radial-gradient(2px 2px at 200px 220px, #ffffff, transparent),
+    radial-gradient(1.5px 1.5px at 280px 60px, #ffffff, transparent),
+    radial-gradient(1px 1px at 310px 180px, #ffffff, transparent),
+    linear-gradient(hsl(234, 40%, 14%), hsl(230, 47%, 29%));
+    background-size: 350px 350px, 350px 350px, 350px 350px, 350px 350px, 350px 350px, 350px 350px, cover;
+    background-repeat: repeat, repeat, repeat, repeat, repeat, repeat , no-repeat;
+    background-attachment: fixed;
+    animation: moveStars 20s linear infinite;
+}
+@keyframes moveStars {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -350px 0, -350px 0, -350px 0, -350px 0, -350px 0, -350px 0, 0 0;
+  }
+}
+
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: .8rem 1rem;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-links li a{
+    font-family: 'Google Sans', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: .8rem;
+}
+
+.pfp img{
+    width: 2rem;
+    margin-left: .8rem;
+    border-radius: 50%;
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 1rem;
+}
+
+.logo{
+    font-family: 'Google Sans', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13rem;
+}
+.logo img{
+    border: 2rem;
+
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.search input{
+    color: #fff;
+    font-size: 1rem;
+    padding-left:1rem;
+    outline: none; 
+    border: none;
+    width:43rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: #1f223783;
+    border: 1px solid hsla(230, 47%, 29%, 0.604);
+}
+.search input::placeholder{
+    color:hsl(219, 31%, 56%);
+    font-size: 1rem;
+}

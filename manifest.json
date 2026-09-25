@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Helium New Tab by ErrorZeros",
+  "version": "1.0",
+  "description": "Custom new tab page with default search engine support.",
+  "permissions": [
+    "search"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
